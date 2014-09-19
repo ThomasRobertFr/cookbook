@@ -1,0 +1,151 @@
+/****************** BASIC ELEMENTS *******************/
+body { margin: 0px auto 30px; width: 800px; padding: 30px 0 0; background: #421d10 url(wood-bg.jpg) fixed left top; font: 76%/150% "Lucida Sans", Arial, sans-serif; color: #555; }
+body.large { margin: 0px 4em 30px; width: auto; }
+ul { list-style: none; padding: 0; margin: 0; }
+ul li { background: url(bullet.gif) no-repeat 4px 6px; padding: 0 0 0 18px; }
+p { padding: 0 0 1.5em; }
+
+img { border: none; }
+a { color: #0072bc; text-decoration: none; outline: none; }
+a:visited { color: #0072bc; text-decoration: none; outline: none; }
+a:hover { color: #000; text-decoration: underline; }
+
+h1, h2, h3, h4 { margin: 0; }
+h1 { font: normal 275%/100% "Lucida Sans", Arial, sans-serif; padding: 0 0 20px; letter-spacing: -1px; position: relative; color: #999; }
+h2 { font: normal 210%/100% "Lucida Sans", Arial, sans-serif; letter-spacing: -1px; padding: 15px 0 4px; margin: 0; color: #333; clear: both; }
+h3 { font: normal 180%/100% Georgia, "Times New Roman", Times, serif; padding: 15px 0 10px; color: #666; }
+h4 { font: normal 132%/130% "Lucida Sans", Arial, sans-serif; padding: 10px 0 3px; color: #333; }
+
+.clear { clear:both; }
+
+/**************** CLASSES COURANTES ******************/
+
+.fltr { float: right; }
+.click { cursor: pointer; }
+
+/**************** TABLEAUX ******************/
+.table { border-collapse: collapse; }
+.table td, .table th { border: 1px dotted #717171; padding: 1px 5px; }
+.table th { background: #E39582; text-align: center; font-variant: small-caps; font-weight: bold; }
+.table td { background: #F6F2EF; }
+
+/**************** NUMEROS DE PAGES ET BOUTONS, FORMULAIRES ******************/
+
+/* .button, .bigbutton, .num_pages strong, .num_pages span.num_page, .num_pages a, button, input, select, textarea { border: 1px solid #717171; border-radius: 4px; padding: 2px 3px; }
+input[type=text], select, textarea { box-shadow: inset 1px 1px 2px #AAA; }
+.button, .bigbutton, .num_pages strong, button, input[type=submit], input[type=button] { color:#FFF !important; background:#db3333; text-shadow: 0 -1px #a61d1d, 0 1px #E57272; box-shadow:0 0 3px rgba(118, 27, 21, 0.6); width: auto !important; border: 1px solid #A61D1D; margin: 0; text-decoration: none; cursor: pointer; }
+.num_pages span.num_page, .num_pages a { background: #FFF; border: 1px solid  #717171; border-radius: 5px; padding: 2px 6px; margin: 0; text-decoration: none; cursor: pointer; text-shadow: 0 1px #ababab; box-shadow:0 0 3px rgba(70, 70, 70, 0.6);  }
+button, input[type=submit], .bigbutton, .button { font-weight: bold; padding: 3x 7px; }
+.button:active, .bigbutton:active, button, input[type=submit]:active, input[type=button]:active { background: #bc2020; }
+.bigbutton { padding: 6px 11px; font-size: 110%; }
+.num_pages { clear: both; text-align: center; margin: 8px 0; line-height: 30px; }
+.num_pages a:hover { background: #f1c1c1; border-color: #994949; }
+.first { border-top: 1px dotted #717171; }
+*/
+
+/**************** MAIN ******************/
+
+#content { background: -webkit-linear-gradient(top, #fff 0%, #f1f0f0 20%, #f1f0f0 80%, #e0dfdf 100%); padding: 0; border-radius: 0 0 6px 6px; box-shadow: 0 3px 8px #000; }
+#content.padding { padding: 17px 20px 30px 20px; }
+
+#header_img { height: 180px; border-radius: 6px 6px 0 0; box-shadow: inset 0px 0px 3px #CCC; position: relative; }
+#header_img.big { height: 250px; }
+
+#header_img .boutons { position: absolute; top: 5px; right: 5px; text-align: right; width: 120px; }
+#header_img .boutons a { opacity: 0.6; }
+#header_img .boutons a:hover { opacity: 0.85; }
+
+#header_img #logo, #header_img #panier, #header_img #ingredients, #header_img #aide { display: block; height: 65px; position: absolute; opacity: 1; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6); }
+#header_img #logo:hover, #header_img #panier:hover, #header_img #ingredients:hover, #header_img #aide:hover { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); }
+#header_img #logo:before, #header_img #panier:before, #header_img #ingredients:before, #header_img #aide:before { content: ' ';  position: absolute; width: 0; height: 0; right: 100%; top: 0; border-width: 5px; border-style: solid; border-color: transparent #A61D1D #A61D1D  transparent; }
+#header_img #logo { top: -10px; left: 20px; width: 70px; background: #DB3333 url(logo.png) center center no-repeat; }
+#header_img #panier { top: -10px; left: 110px; width: 70px; background: #DB3333 url(panier.png) center center no-repeat; }
+#header_img #panier span { position: absolute; top: 9px; right: 5px; font-size: 18px; line-height: 21px; background: #721313; border-radius: 20px; padding: 1px 6px; display: block; color: #FFF; opacity: 0.8; }
+#header_img #ingredients { top: -10px; left: 200px; width: 70px; background: #DB3333 url(ingredients.png) center center no-repeat; }
+#header_img #aide { top: -10px; left: 290px; width: 70px; background: #DB3333 url(aide.png) center center no-repeat; }
+
+#header_img h1, #header_img .infos, #header_img .desc { position: absolute; background: #EEE; }
+#header_img h1:before, #header_img .infos:before, #header_img .desc:before { content: ' ';  position: absolute; width: 0; height: 0; left: 0; top: 100%; border-width: 0; border-style: solid; border-color: #666 #666 transparent transparent; }
+#header_img h1 { left: -12px; top: 80px; padding: 3px 17px; color: #333; opacity: 0.9; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6); font-size: 3em; max-width: 600px; }
+#header_img h1:before { border-width: 6px; }
+#header_img .infos { left: -10px; top: 200px; padding: 3px 9px; color: #333; opacity: 0.8; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); font-size: 1.2em; max-width: 750px; }
+#header_img .infos:before { border-width: 5px; }
+#header_img .infos img { vertical-align: -3px; }
+#header_img .infos .stars_big { vertical-align: -2px; }
+#header_img .desc { left: -8px; top: 130px; padding: 1px 6px; color: #333; opacity: 0.7; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.55); font-size: 1em; max-width: 650px; }
+#header_img .desc:before { border-width: 4px; }
+
+.info_message, #ok_message, #error_message { margin: 10px; padding: 7px; padding-left: 35px; -moz-border-radius: 25px; border-radius: 25px; -webkit-border-radius: 25px; color: #292929; }
+#ok_message {  border: 1px solid #008000; background: #D6FFBA url(button_ok.png) no-repeat 4px center; }
+#error_message { border: 1px solid #FF0000; background: #FFD3D3 url(button_cancel.png) no-repeat 4px center; }
+.info_message { border: 0; background: #FFF; padding: 10px;  }
+.info_message strong { border-radius: 30px; display: block; background: #DB3333; float: left; padding: 8px 17px; font-size: 30px; color: #FFF; margin: 0 10px 50px 0; text-shadow: 0 -1px #A61D1D, 0 1px #E57272; box-shadow: 0 0 5px #761515 inset; }
+.info_message p, #ok_message p, #error_message p { margin-top: 0; }
+
+/**************** LISTE RECETTES *********************/
+.recette-el { display: block; float: left; width: 200px; height: 200px; position: relative; margin: 25px; overflow: hidden; z-index: 10; border-radius: 7px; box-shadow: inset 0 0 6px #222; }
+.recette-el:hover { box-shadow: inset 0 0 35px #000; }
+.recette-el .infos { position: absolute; bottom: 0; width: 200px; }
+.recette-el .titre { font-size: 1.3em; color: #FFF; background: rgba(0,0,0,0.7); padding: 5px; border-radius: 0 0 7px 7px; font-weight: bold; }
+.recette-el:hover .titre { background: rgba(0,0,0,0.9); }
+.recette-el .details { margin-right: 5px; float: right; color: #000; font-weight: bold; font-size: 0.9em; }
+.recette-el .stars { margin-left: 5px; }
+.recette-el .cart { display: block; position: absolute; top: 5px; right: 5px; text-align: right; }
+.recette-el .cart img { opacity: 0.6; }
+.recette-el .cart img:hover { opacity: 0.85; }
+
+.recettes-group { background: #555 url(bg_dir.png); float: left; margin: 10px; border-radius: 8px; box-shadow: inset 0 0 10px #444; padding: 15px 0 0 15px; }
+.recettes-group .recette-el { margin: 0 50px 15px 0; display: none; }
+.recettes-group .recette-dir { margin: 0 15px 15px 0; display: block; }
+.recettes-group.opened .recette-el { display: block; }
+.recettes-group .recette-dir .expand { position: absolute; top: 28px; left: 40px; width: 120px; height: 120px; opacity: 0.5; background: url(expand.png); }
+.recettes-group.opened .recette-dir { margin: 0 50px 15px 0; }
+.recettes-group.opened .recette-dir .expand { background: url(unexpand.png); }
+.recettes-group .recette-dir:hover .expand { opacity: 0.75; }
+.recettes-group .recette-dir .mask { position: absolute; top: 0; left: 0; width: 200px; height: 200px; background: -webkit-radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)); border-radius: 7px; }
+
+.stars { position: relative; width: 60px; height: 12px; background: url(stars_e.png); display: inline-block; }
+.stars_full { position: absolute; top: 0; left: 0; height: 12px; background: url(stars.png); }
+
+.stars_big { position: relative; width: 70px; height: 14px; background: url(stars_big_e.png); display: inline-block; }
+.stars_big_full { position: absolute; top: 0; left: 0; height: 14px; background: url(stars_big.png); }
+
+.spinning { -webkit-animation-name: loading; -webkit-animation-duration: 1.5s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; }
+@-webkit-keyframes loading { from { -webkit-transform:rotate(0deg); } to { -webkit-transform:rotate(360deg); } }	
+
+/* PANIER */
+
+#panier-ingredients { padding: 17px 0 90px 20px; float: right; width: 300px;  border-left: 1px solid #999; }
+
+/**************** RECETTE *********************/
+.recette h2 { padding: 20px 0 12px; }
+.recette .left, .recette .right { padding: 0 0 30px 20px; float: left; }
+.recette .left { width: 500px; border-right: 1px solid #999; }
+.recette .right { width: 250px; }
+
+/**************** RECETTE EDIT *********************/
+body.edit #header_img h1, body.edit #header_img .infos, body.edit #header_img .desc { max-width: 720px; padding: 0 !important; }
+body.edit #header_img h1 { padding: 0; margin: 0; }
+body.edit #header_img h1 label { position: relative; width: 34px; height: 27px; display: inline-block; margin-left: 12px; }
+body.edit #header_img h1 label img { position: absolute; left: 0; top: 0; }
+body.edit #header_img h1 label #i_dir { position: absolute; left: 6px; top: 8px; }
+body.edit #header_img h1 input#i_titre { padding: 3px 17px 3px 5px; color: #333; font-size: 0.9em; width: 500px; margin: 0; border: 0; background: none; }
+body.edit #header_img .desc { padding: 0; }
+body.edit #header_img .desc textarea { padding: 3px 6px; margin: 0; border: 0; color: #333; background: none; width: 600px; height: 40px; }
+body.edit #header_img .infos { padding: 1px 9px !important; color: #333; font-size: 1em; }
+#header_img #upload-dnd { position: absolute; bottom: 5px; right: 5px; width: 30px; height: 30px; padding: 10px; background: #CCC url(up.png) center center no-repeat; opacity: 0.5; border-radius: 7px; box-shadow: inset 0 0 6px #222; }
+#header_img #upload-dnd img { display: none; }
+#header_img #upload-dnd.ip { background-image: none; opacity: 0.7; }
+#header_img #upload-dnd.ip img { display: inline; }
+#header_img #upload-dnd.ko { background: #CCC url(ko35.png) center center no-repeat; }
+
+
+body.edit .recette .left { width: 300px; padding-left: 12px; }
+body.edit .recette .left textarea { width: 275px; height: 600px; border-radius: 7px; box-shadow: inset 0 0 6px #222; border: 0; padding: 4px 7px; }
+body.edit .recette .right { width: 470px; padding-left: 12px; }
+
+body.edit .recette .right .col1, body.edit .recette .right .col1 input { width: 40px; }
+body.edit .recette .right .col4 input { width: 100px; }
+
+#i_submit { padding: 0; margin: 0; border: 0; background: transparent url(ok35.png); opacity: 0.6; width: 35px; height: 35px; vertical-align: 22px; cursor: pointer; }
+#i_submit:hover { opacity: 0.85; }

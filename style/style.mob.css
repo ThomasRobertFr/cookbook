@@ -1,0 +1,111 @@
+/****************** BASIC ELEMENTS *******************/
+body { margin: 0px 13px 30px; padding: 30px 0 0; background: #421d10 url(wood-bg.jpg) fixed left top; font: 76%/150% "Lucida Sans", Arial, sans-serif; color: #555; }
+ul { list-style: none; padding: 0; margin: 0; }
+ul li { background: url(bullet.gif) no-repeat 4px 6px; padding: 0 0 0 18px; }
+p { padding: 0 0 1.5em; }
+
+img { border: none; }
+a { color: #0072bc; text-decoration: none; outline: none; }
+a:visited { color: #0072bc; text-decoration: none; outline: none; }
+a:hover { color: #000; text-decoration: underline; }
+
+h1, h2, h3, h4 { margin: 0; }
+h1 { font: normal 200%/100% "Lucida Sans", Arial, sans-serif; padding: 0 0 20px; letter-spacing: -1px; position: relative; color: #999; }
+h2 { font: normal 170%/100% "Lucida Sans", Arial, sans-serif; letter-spacing: -1px; padding: 15px 0 4px; margin: 0; color: #333; clear: both; }
+h3 { font: normal 140%/100% Georgia, "Times New Roman", Times, serif; padding: 15px 0 10px; color: #666; }
+h4 { font: normal 120%/130% "Lucida Sans", Arial, sans-serif; padding: 10px 0 3px; color: #333; }
+
+.clear, .clearmob { clear:both; }
+
+code { color: #000099; font: normal 108% Monaco, "DejaVu Sans Mono", "Courier New", Courier, monospace; white-space: nowrap; padding: 0 2px; }
+pre code { display: block; clear: both; background: #fff; padding: 10px; color: #333; border: solid 1px #e7e7e7; overflow: auto; line-height: 140%; margin: .5em 0 2em; white-space: pre; }
+
+img[src="style/edit25.png"], img[src="style/edit35.png"], img[src="style/copy25.png"], img[src="style/copy35.png"] { display: none !important; }
+
+/**************** CLASSES COURANTES ******************/
+.fltr { float: right; }
+
+/**************** TABLEAUX ******************/
+.table { border-collapse: collapse; }
+.table td, .table th { border: 1px dotted #717171; padding: 1px 5px; }
+.table th { background: #E39582; text-align: center; font-variant: small-caps; font-weight: bold; }
+.table td { background: #F6F2EF; }
+
+/**************** MAIN ******************/
+#content { background: -webkit-linear-gradient(top, #fff 0%, #f1f0f0 20%, #f1f0f0 80%, #e0dfdf 100%); padding: 0; border-radius: 0 0 6px 6px; box-shadow: 0 3px 8px #000; }
+
+#header_img { height: 160px; border-radius: 6px 6px 0 0; box-shadow: inset 0px 0px 3px #CCC; position: relative; }
+#header_img.big { height: 200px; }
+
+#header_img .boutons { position: absolute; top: 5px; right: 5px; text-align: right; width: 90px; }
+#header_img .boutons img { width: 25px; }
+#header_img .boutons a { opacity: 0.75; }
+#header_img .boutons a:hover { opacity: 0.85; }
+
+#header_img #logo, #header_img #panier { display: block; height: 40px; width: 50px; position: absolute; opacity: 1; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6); top: -10px; }
+#header_img #logo:hover, #header_img #panier:hover { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); width: 50px; }
+#header_img #logo:before, #header_img #panier:before { content: ' ';  position: absolute; width: 0; height: 0; right: 100%; top: 0; border-width: 5px; border-style: solid; border-color: transparent #A61D1D #A61D1D  transparent; }
+#header_img #logo { left: 20px; background: #DB3333 url(logo.png) center center no-repeat; }
+#header_img #panier { left: 90px; background: #DB3333 url(panier.png) center center no-repeat; }
+#header_img #panier span { position: absolute; top: 2px; right: 2px; font-size: 15px; line-height: 18px; background: #721313; border-radius: 20px; padding: 1px 6px; display: block; color: #FFF; opacity: 0.8; }
+#header_img #logo, #header_img #panier { background-size: 35px; }
+
+#header_img h1, #header_img .infos, #header_img .desc { position: absolute; background: #EEE; }
+#header_img h1:before, #header_img .infos:before, #header_img .desc:before { content: ' ';  position: absolute; width: 0; height: 0; left: 0; top: 100%; border-width: 0; border-style: solid; border-color: #666 #666 transparent transparent; }
+#header_img h1 { left: -12px; top: 55px; padding: 3px 17px; color: #333; opacity: 0.9; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6); font-size: 2.5em; max-width: 600px; }
+#header_img h1:before { border-width: 6px; }
+#header_img .infos { left: -10px; top: 160px; padding: 3px 9px; color: #333; opacity: 0.8; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); font-size: 1em; max-width: 750px; }
+#header_img .infos:before { border-width: 5px; }
+#header_img .infos img { vertical-align: -3px; }
+#header_img .infos .stars_big { vertical-align: -2px; }
+#header_img .desc { left: -8px; top: 110px; padding: 1px 6px; color: #333; opacity: 0.7; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.55); font-size: 1em; max-width: 650px; }
+#header_img .desc:before { border-width: 4px; }
+
+.info_message, #ok_message, #error_message { margin: 10px; padding: 7px; padding-left: 35px; -moz-border-radius: 25px; border-radius: 25px; -webkit-border-radius: 25px; color: #292929; }
+#ok_message {  border: 1px solid #008000; background: #D6FFBA url(button_ok.png) no-repeat 4px center; }
+#error_message { border: 1px solid #FF0000; background: #FFD3D3 url(button_cancel.png) no-repeat 4px center; }
+.info_message { border: 0; background: #FFF; padding: 10px;  }
+.info_message strong { border-radius: 30px; display: block; background: #DB3333; float: left; padding: 8px 17px; font-size: 30px; color: #FFF; margin: 0 10px 50px 0; text-shadow: 0 -1px #A61D1D, 0 1px #E57272; box-shadow: 0 0 5px #761515 inset; }
+.info_message p, #ok_message p, #error_message p { margin-top: 0; }
+
+/**************** LISTE RECETTES *********************/
+.recette-el { display: block; width: 45%; position: relative; float: left; overflow: hidden; border-radius: 7px; box-shadow: inset 0 0 6px #222; margin: 3.33% 0 0 3.33%; }
+.recette-el:hover { box-shadow: inset 0 0 35px #000; }
+.recette-el .infos { position: absolute; bottom: 0; width: 100%; }
+.recette-el .titre { font-size: 1.3em; color: #FFF; background: rgba(0,0,0,0.7); padding: 5px; border-radius: 0 0 7px 7px; font-weight: bold; }
+.recette-el:hover .titre { background: rgba(0,0,0,0.9); }
+.recette-el .details { margin-right: 5px; float: right; color: #000; font-weight: bold; font-size: 0.9em; }
+.recette-el .stars { margin-left: 5px; }
+.recette-el .cart { display: block; position: absolute; top: 5px; right: 5px; text-align: right; }
+.recette-el .cart img { opacity: 0.75; }
+.recette-el .cart img:hover { opacity: 0.85; }
+.recette-el .transp { width: 100%; display: block; }
+
+.recettes-group { background: #555 url(bg_dir.png); margin: 3.33% 0; box-shadow: inset 0 0 10px #444; padding-bottom: 3.33%; }
+.recettes-group .recette-el { display: none; }
+.recettes-group .recette-dir { width: 93.33%; height: 120px; }
+.recettes-group .recette-dir, .recettes-group.opened .recette-el { display: block; }
+.recettes-group .recette-dir .expand { position: absolute; top: 5%; left: 0; width: 100%; height: 100%; opacity: 0.5; background: url(expand.png) center top no-repeat; background-size: 80px; }
+.recettes-group.opened .recette-dir .expand { background: url(unexpand.png) center top no-repeat; background-size: 80px; }
+.recettes-group .recette-dir:hover .expand { opacity: 0.75; }
+.recettes-group .recette-dir .mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: -webkit-radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3)); border-radius: 7px; }
+
+.stars { position: relative; width: 60px; height: 12px; background: url(stars_e.png); display: inline-block; }
+.stars_full { position: absolute; top: 0; left: 0; height: 12px; background: url(stars.png); }
+
+.stars_big { position: relative; width: 70px; height: 14px; background: url(stars_big_e.png); display: inline-block; }
+.stars_big_full { position: absolute; top: 0; left: 0; height: 14px; background: url(stars_big.png); }
+
+/* PANIER */
+
+#panier-recettes { padding-bottom: 5%; }
+#panier-ingredients { padding: 5%; border-bottom: 1px solid #999; }
+
+/**************** RECETTE *********************/
+
+.recette h2 { padding: 5% 0; }
+.recette .left, .recette .right { padding: 0 5%; }
+.recette .right { padding-bottom: 5%; }
+
+/**************** RECETTE EDIT *********************/
+body.edit { display: none; }
